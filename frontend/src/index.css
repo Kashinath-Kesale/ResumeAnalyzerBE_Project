@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+
+body {
+  @apply bg-gray-50 text-gray-800 antialiased;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Scrollbar (modern look) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(107, 114, 128, 0.4); /* gray-500/40 */
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(107, 114, 128, 0.7);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Smooth transitions globally */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Optional link utility (avoid overriding all anchors globally) */
+.link {
+  @apply text-gray-700 hover:text-blue-600 font-medium;
+}
+
+/* Cards */
+.card {
+  @apply bg-white shadow-md rounded-xl p-4 border border-gray-100;
+}
+
+/* Buttons */
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium shadow-sm;
+}
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+.btn-outline {
+  @apply border border-gray-300 hover:bg-gray-100;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold text-gray-900;
+}
+
+/* Page Layout Helpers */
+.page {
+  @apply p-6 md:p-10;
+}
+.section {
+  @apply mb-8;
+}
+
+/* Avatar with ring */
+.avatar {
+  @apply w-10 h-10 rounded-full border-2 border-white shadow;
+}
